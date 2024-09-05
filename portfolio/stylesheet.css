@@ -1,0 +1,301 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #eaf7f9;
+  
+}
+
+/* Header styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px; 
+    background: #4b4a4b;
+    color: #fff;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color:#ddd;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+.navbar .active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Home section */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 100px 20px;
+    color: #333;
+   
+  
+}
+
+.home-content h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.home-content p {
+    font-size: 18px;
+
+}
+
+.social-media a{
+    border-radius: 30%;
+    border: #754ef9 solid;
+    font-size: 30px;
+   
+}
+
+.social-media a:hover{
+    color: red;
+}
+
+    
+.profile-img {
+    margin-top: 20px;
+}
+
+.profile-img img {
+    width: 200px;
+    height: 200px;
+   border: 5px solid #262627;
+   border-radius: 50%;
+}
+
+/* About section */
+.about {
+    display: flex;
+    padding: 50px 20px;
+    align-items: center;
+    text-align: center;
+  
+
+}
+
+
+span{
+    color: #754ef9;
+}
+.about-img img {
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    border: 5px solid #262627;
+    border-radius: 50px;
+
+   
+}
+
+/* Skills section */
+.skill {
+    padding: 50px 20px;
+    text-align: center;
+ 
+}
+
+.container0 {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.container {
+    background: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 10px 0;
+    height: 20px;
+}
+
+.skills {
+    height: 100%;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+.container{
+    width: 100%;
+    background-color: white;
+}
+
+.html { 
+    width: 95%;
+    background: #1572b6; }
+.css { 
+    width: 90%;
+    background:#1572b6 ; }
+.js {width: 85%; background: #1572b6; }
+.php { width: 80%;background: #1572b6; }
+
+/* Resume section */
+.resume {
+    padding: 50px 20px;
+    background: #fff;
+}
+
+.resume-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.resume-item {
+    margin-bottom: 30px;
+}
+
+.resume-item h3 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.resume-item p {
+    margin: 5px 0;
+}
+
+/* Contact section */
+.contact {
+    padding:50px, 20px;
+    text-align: center;
+
+}
+
+.input-box {
+    margin-bottom: 10px;
+    width: 60%;
+    margin-left: 200px;
+
+}
+
+.input-box input, .input-box textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 5px solid #1572b6;
+    border-radius: 5px;
+
+    
+}
+
+textarea {
+    height: 100px;
+    border: 5px solid  #1572b6;
+
+    
+}
+
+/* Button styles */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #754ef9;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  
+}
+
+.btn:hover {
+    background: #262627;
+}
+
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar {
+        flex-direction: column;
+        width: 30%;
+    }
+
+    .navbar a {
+        margin: 10px 0;
+    }
+
+    .home-content h1 {
+        font-size: 28px;
+    }
+
+    .home-content p {
+        font-size: 16px;
+    }
+
+    .profile-img img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .about-img img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .input-box {
+        width: 50%;
+    }
+
+    .container0 {
+        width: 100%;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 10px 20px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+        margin: 5px 0;
+    }
+
+    .home-content h1 {
+        font-size: 24px;
+    }
+
+    .home-content p {
+        font-size: 14px;
+    }
+
+    .profile-img img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .about-img img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .input-box input, .input-box textarea {
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 8px 16px;
+    }
+}
